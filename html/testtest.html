@@ -144,6 +144,19 @@
         </div>
     </footer>
 
-    <script src="../javascript/testtest.js"></script>
+    <script>
+        // Image Slider logic
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slider .slides img');
+
+        function moveSlide(n) {
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            document.querySelector('.slider .slides').style.transform = 
+                `translateX(-${slideIndex * 100}%)`;
+        }
+
+        let slideInterval = setInterval(() => moveSlide(1), 5000);
+        window.addEventListener('beforeunload', () => clearInterval(slideInterval));
+    </script>
 </body>
 </html>
