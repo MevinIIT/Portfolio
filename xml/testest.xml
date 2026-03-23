@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+    <project>
+        <title>Coronary Artery Disease Prediction System</title>
+        <description>Full-stack web app with Flask and ML for 10-year risk prediction.</description>
+        <image>cad_placeholder.png</image>
+    </project>
+    <project>
+        <title>Income Recording System</title>
+        <description>Python program for managing income data with file persistence.</description>
+        <image>income_placeholder.png</image>
+    </project>
+    <project>
+        <title>Income File Import System (JavaFX)</title>
+        <description>JavaFX app to import and visualize income data from CSV files.</description>
+        <image>javafx_placeholder.png</image>
+    </project>
+    <project>
+        <title>Personal Portfolio Website</title>
+        <description>Responsive website with custom UI to showcase projects and skills.</description>
+        <image>portfolio_placeholder.png</image>
+    </project>
+    <project>
+        <title>Database System for Hospital</title>
+        <description>MySQL database for patient records, appointments, and billing.</description>
+        <image>db_placeholder.png</image>
+    </project>
+</projects>

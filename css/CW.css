@@ -1,0 +1,214 @@
+
+
+header {
+    background: rgba(211, 211, 211, 0);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    text-shadow: 1px 1px 2px #08e6da, 1px 1px 2px #7a6bbb; 
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    background: transparent;
+}
+
+header a.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: black;
+    
+    
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    position: absolute;
+    top: 1.5cm;
+    left: 41%;
+    transform: translateX(-50%);
+    animation: fadeIn 1s ease forwards;
+}
+
+
+.profile-info {
+    color: rgb(238, 221, 221);
+    text-shadow: 2px 2px 4px #160101;
+    position: absolute;
+    top: 170px;
+    left: 32%;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Poor Richard";
+    animation: fadeIn 1s ease forwards;
+}
+
+.fields {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 0px;
+    position: absolute;
+    left: 40px;
+}
+
+.fields button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Poor Richard";
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #160101;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fields button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+footer {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    position: absolute;
+    top: 900px;
+    width: 100%;
+    height: 185px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+
+.follow {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 70px;
+    font-family: 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.rights {
+    position: relative;
+    top: 100px;
+    left: -35px;
+}
+
+
+.speech-bubble {
+    background: transparent;
+    color: rgb(241, 236, 236);
+    text-shadow: 2px 2px 4px #090136;
+    padding: 15px 20px;
+    border-radius: 20px;
+    position: relative;
+    right: -100px;
+    max-width: 300px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    border: 2px solid white;
+
+
+}
+
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: white transparent transparent transparent;
+
+}
+
+
+.speech-bubble:nth-child(1) {
+    top: 600px;
+    right: -25cm;
+}
+
+.speech-bubble:nth-child(2) {
+    top: 460px;
+    right: -13.4cm;
+}
+
+.speech-bubble:nth-child(3) {
+    top: 320px;
+    right: -1.5cm;
+}
+
+

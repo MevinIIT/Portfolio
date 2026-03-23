@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Projects | Mevin Sankaranarayana</title>
+    <link rel="stylesheet" href="../css/testtest.css">
+    <style>
+        /* Make slider images black and more transparent */
+        .slider img {
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            background-color: black;
+        }
+        .slider img:hover {
+            opacity: 0.9;
+        }
+        /* Custom scrollbar for card container */
+        .card-slider-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .card-slider-container::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+        .card-slider-container::-webkit-scrollbar-thumb {
+            background: #000;
+            border-radius: 10px;
+        }
+        /* Make cards clickable */
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="CW.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a class="active" href="testtest.html">PROJECTS</a>
+        <a href="nameless.html">CONTACT</a>
+        <a href="awards.html">AWARDS</a>
+    </header>
+
+    <main>
+        <h1 class="main-heading">Data Science & AI Projects</h1>
+        
+        <div class="sliders-container">
+            <!-- Image Slider (5 slides) - black background & transparent -->
+            <div class="slider">
+                <div class="slides">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23000000'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3ECAD Prediction System%3C/text%3E%3C/svg%3E" alt="CAD Prediction System">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23000000'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3EIncome Recording System%3C/text%3E%3C/svg%3E" alt="Income Recording System">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23000000'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3EIncome File Import System%3C/text%3E%3C/svg%3E" alt="Income File Import System">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23000000'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3EPersonal Portfolio Website%3C/text%3E%3C/svg%3E" alt="Portfolio Website">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23000000'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3EDatabase System for Hospital%3C/text%3E%3C/svg%3E" alt="Hospital Database System">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+            <!-- Featured Projects Cards (static, with clickable links) -->
+            <div class="card-slider">
+                <h2 class="card-slider-title">Featured Projects</h2>
+                <div class="card-slider-container" id="cardSlider">
+                    <!-- Card 1: CAD Prediction System -->
+                    <a href="https://github.com/MevinIIT/CM2603-DSGP-Group-3" class="card-link" target="_blank" rel="noopener noreferrer">
+                        
+                        <div class="card">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23333333'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='white' text-anchor='middle' dy='.3em'%3ECAD Project%3C/text%3E%3C/svg%3E" alt="CAD Project">
+                            <div class="card-content">
+                                <h3>Coronary Artery Disease Prediction</h3>
+                                <p>Full-stack web app with Flask and ML for 10-year risk prediction.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 2: Income Recording System -->
+                    <a href="#" class="card-link" target="_blank" rel="noopener noreferrer">
+                        
+                        <div class="card">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23333333'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='white' text-anchor='middle' dy='.3em'%3EIncome System%3C/text%3E%3C/svg%3E" alt="Income System">
+                            <div class="card-content">
+                                <h3>Income Recording System</h3>
+                                <p>Python program for managing income data with file persistence.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 3: Income File Import System -->
+                    <a href="#" class="card-link" target="_blank" rel="noopener noreferrer">
+                        
+                        <div class="card">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23333333'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='white' text-anchor='middle' dy='.3em'%3EJavaFX App%3C/text%3E%3C/svg%3E" alt="JavaFX App">
+                            <div class="card-content">
+                                <h3>Income File Import System (JavaFX)</h3>
+                                <p>JavaFX app to import and visualize income data from CSV files.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 4: Personal Portfolio Website -->
+                    <a href="#" class="card-link" target="_blank" rel="noopener noreferrer">
+                        
+                        <div class="card">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23333333'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='white' text-anchor='middle' dy='.3em'%3EPortfolio%3C/text%3E%3C/svg%3E" alt="Portfolio">
+                            <div class="card-content">
+                                <h3>Personal Portfolio Website</h3>
+                                <p>Responsive website to showcase projects and skills.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Card 5: Database System for Hospital -->
+                    <a href="#" class="card-link" target="_blank" rel="noopener noreferrer">
+                        
+                        <div class="card">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23333333'/%3E%3Ctext x='50%25' y='50%25' font-size='16' fill='white' text-anchor='middle' dy='.3em'%3EDatabase%3C/text%3E%3C/svg%3E" alt="Database">
+                            <div class="card-content">
+                                <h3>Database System for Hospital</h3>
+                                <p>MySQL database for patient records, appointments, and billing.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://x.com/"><img src="../images/fb.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/mevin_music/"><img src="../images/ig.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/"><img src="../images/yt.png" alt="YouTube"></a>
+            <a href="https://x.com/"><img src="../images/twit.png" alt="Facebook"></a>
+            <div class="follow">Follow me on <br>social media</div>
+        </div>
+        <div class="rights">
+            <p>
+                <a href="copyright.html" target="_blank">All rights reserved</a> |
+                <a href="terms.html" target="_blank">Terms of Use</a> |
+                <a href="privacy.html" target="_blank">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Image Slider logic
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slider .slides img');
+
+        function moveSlide(n) {
+            slideIndex = (slideIndex + n + slides.length) % slides.length;
+            document.querySelector('.slider .slides').style.transform = 
+                `translateX(-${slideIndex * 100}%)`;
+        }
+
+        let slideInterval = setInterval(() => moveSlide(1), 5000);
+        window.addEventListener('beforeunload', () => clearInterval(slideInterval));
+    </script>
+</body>
+</html>
