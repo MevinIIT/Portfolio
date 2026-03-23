@@ -1,4 +1,4 @@
-fetch('xml/testest.xml')
+fetch('../xml/testest.xml')
   .then(response => response.text())
   .then(data => {
     const parser = new DOMParser();
@@ -14,7 +14,7 @@ fetch('xml/testest.xml')
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-            <img src="images/${img}" alt="${title} Project">
+            <img src="../images/${img}" alt="${title} Project">
             <div class="card-content">
                 <h3>${title}</h3>
                 <p>${desc}</p>
